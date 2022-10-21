@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+    --title: #fffcf9;
+    --subtitle: #b3b3b3;
+    --bg-button: #e9e6e3;
+    --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
+}
+
+* {
+    margin:0;
+    padding:0;
+    border: none;
+    box-sizing: content-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, main{
+    width: 100vw;
+    height: 100vh;
+    background-image: var(--background);
+    color: white;
+}
+header, section{
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+}
+header > h1 {
+    color: var(--title);
+}
+
+/*
+w -> 2592.7559055px 
+H -> 3840
+*/
+.content-random {
+    padding: 20px 0 0 0;
+    display: flex;
+    /* justify-content: center; */
+    /* background-color: red; */
+    gap: 20PX;
+}
+
+.cover {
+    width: 140px;
+    height: 196px;
+    background-color: blueviolet;
+    flex-basis: 450px;
+    border-radius: 5px;
+}
+
+.cover > img{
+    width: 100%;
+}
+.content-random > .describe > h2{
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.content-random > .describe > p {
+    text-align: justify;
+    font-size: 14px;
+}
+
+.random{
+    margin-top: 30px;
+}
+
+.random > button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--bg-button);
+    color: #000000;
+    font-weight: bold;
+}
+
+.random > button:hover{
+    transition: background-color 1s ease;
+    background-color: var(--subtitle);
+    cursor: pointer;
+}
+.random > button:active{
+    transform: translateY(5px);
+}
+
+@media screen and (max-width:600px){
+    .content-random{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-random > .describe > h2{
+        text-align: center;
+    }
+
+    .content-random > .describe > p{
+        margin: 0 auto;
+        width: 80%;
+        text-align: justify;
+    }
+
+    .cover{
+        flex-basis: 200px
+    }
+}
