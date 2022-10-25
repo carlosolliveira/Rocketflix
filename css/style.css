@@ -45,9 +45,13 @@ H -> 3840
 .cover {
     width: 140px;
     height: 196px;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     flex-basis: 450px;
     border-radius: 5px;
+    animation: loadmovie;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
 }
 
 .cover > img{
