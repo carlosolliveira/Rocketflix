@@ -1,9 +1,6 @@
+var api_info
 
-
-function randomNum(){
-    return Math.random()
-}
-
-function randommovie(){
-    console.log("Hi")
-}
+(async () => {
+    var data = await fetch("/js/info_api.json");
+    api_info = await data.json()
+})()
