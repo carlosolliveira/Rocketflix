@@ -26,7 +26,7 @@ header{
 }
 header, section{
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 800px;
     text-align: center;
 }
 header > h1 {
@@ -39,15 +39,17 @@ H -> 3840
 */
 .content-random {
     padding: 20px 0 0 0;
-    display: flex;
+    display: none;
     /* justify-content: center; */
     /* background-color: red; */
     gap: 20PX;
+    /* background-color: #102d71; */
 }
 
 .cover {
     width: 140px;
     height: 196px;
+    /* display: none; */
     /* background-color: blueviolet; */
     flex-basis: 450px;
     border-radius: 5px;
@@ -58,7 +60,7 @@ H -> 3840
 }
 
 .cover > img{
-    width: 100%;
+    width: 140px;
 }
 .content-random > .describe > h2{
     text-align: left;
