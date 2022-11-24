@@ -1,5 +1,5 @@
 {
-    "KEY_API": "",
-    "URL_BASE": "",
-    "URL_COVER": ""
+    "KEY_API": "59553cf111b24e8facd1a0fc14f91ed9",
+    "URL_BASE": "https://api.themoviedb.org/3/movie/",
+    "URL_COVER": "https://api.themoviedb.org/3/movie/"
 }
