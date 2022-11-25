@@ -24,9 +24,9 @@ async function getMovie(x){
         }
         else{
             console.log(response.status)
-            getMovie(339403)
+            getMovie([624860, 254128][Math.round(Math.random())])
         }
-    }).catch(() => getMovie([136797, 20945][Math.round(Math.random() * 2)]))
+    }).catch(() => getMovie([136797, 157336][Math.round(Math.random())]))
 }
 
 function setM(){
