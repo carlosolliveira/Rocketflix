@@ -4,6 +4,7 @@ var dataMovie
     var data = await fetch("/js/info_api.json");
     api_info = await data.json()
     console.log(api_info)
+    getMovie(807)
 })()
 
 async function parseJson(x){
@@ -23,9 +24,9 @@ async function getMovie(x){
         }
         else{
             console.log(response.status)
-            getMovie(76341)
+            getMovie(339403)
         }
-    }).catch(() => getMovie(76341))
+    }).catch(() => getMovie([136797, 20945][Math.round(Math.random() * 2)]))
 }
 
 function setM(){
@@ -37,5 +38,6 @@ function setM(){
 
 function randommovie(){
     var num = Math.ceil(Math.random() * 1000 + Math.ceil(Math.random() * new Date().getSeconds() * new Date().getMinutes()))
-    getMovie(num + 1)
+    getMovie(num)
+    console.log(num)
 }
