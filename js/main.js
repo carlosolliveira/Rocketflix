@@ -1,7 +1,7 @@
 var api_info
 var dataMovie
 (async () => {
-    var data = await fetch("/js/info_api.json");
+    var data = await fetch("https://raw.githubusercontent.com/carlosolliveira/Rocketflix/main/js/info_api.json");
     api_info = await data.json()
     console.log(api_info)
     getMovie(807)
